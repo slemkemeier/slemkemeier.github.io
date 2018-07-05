@@ -3,8 +3,13 @@
   margin-bottom: 50px;
   text-align: center;
   img {
-    width: 225px;
-    height: 225px;
+    width: 316px;
+    height: 175px;
+    border: 7px solid $white;
+  }
+  #kati {
+    height: 175px;
+    width: auto;
     border: 7px solid $white;
   }
   h4 {
@@ -14,5 +19,42 @@
   }
   p {
     margin-top: 0;
+  }
+  .team-link {
+    position: relative;
+    display: block;
+    max-width: 400px;
+    margin: 0 auto;
+    cursor: pointer;
+    .team-hover {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      -webkit-transition: all ease 0.5s;
+      -moz-transition: all ease 0.5s;
+      transition: all ease 0.5s;
+      opacity: 0;
+      background: fade-out($primary, .1);
+      &:hover {
+        opacity: 1;
+      }
+      .team-hover-content {
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        height: 20px;
+        margin-top: -12px;
+        text-align: center;
+        color: white;
+        i {
+          margin-top: -12px;
+        }
+        h3,
+        h4 {
+          margin: 0;
+        }
+      }
+    }
   }
 }
