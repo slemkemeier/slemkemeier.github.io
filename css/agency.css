@@ -152,7 +152,7 @@ img::-moz-selection {
 }
 
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
-  color: #3640DC;
+  color: #8d93eb;
 }
 
 @media (min-width: 992px) {
@@ -739,14 +739,16 @@ header.masthead .intro-text .intro-heading {
   margin: 0;
 }
 
+#join {
+  background-color: #ecedfc;
+}
+
+#about2 {
+  background-color: #ecedfc;
+}
+
 section#contact {
-  /*  background-color: $gray-900;
-  background-image: url('../img/map-image.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  .section-heading {
-    color: $white;
-  }*/
+  background-color: #ecedfc;
 }
 
 section#contact .form-group {
@@ -797,14 +799,10 @@ section#contact :-ms-input-placeholder {
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-ul.social-buttons {
-  margin-bottom: 0;
-}
-
 ul.social-buttons li a {
-  font-size: 20px;
+  font-size: 50px;
   line-height: 40px;
-  display: block;
+  display: inline-block;
   width: 70px;
   height: 70px;
   -webkit-transition: all 0.3s;
@@ -818,6 +816,16 @@ ul.social-buttons li a {
 
 ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
   background-color: #3640DC;
+}
+
+ul.social-buttons li i {
+  position: relative;
+  top: 9px;
+  left: .01px;
+}
+
+.social-button-div {
+  text-align: center;
 }
 
 footer {

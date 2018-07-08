@@ -2,13 +2,7 @@
 
 
 section#contact {
-/*  background-color: $gray-900;
-  background-image: url('../img/map-image.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  .section-heading {
-    color: $white;
-  }*/
+  background-color: lighten($primary, 42%);
   .form-group {
     margin-bottom: 25px;
     input,
@@ -51,13 +45,12 @@ section#contact {
 }
 
 ul.social-buttons {
-  margin-bottom: 0;
-  
+
   li {
     a {
-      font-size: 20px;
+      font-size: 50px;
       line-height: 40px;
-      display: block;
+      display: inline-block;
       width: 70px;
       height: 70px;
       -webkit-transition: all 0.3s;
@@ -72,6 +65,15 @@ ul.social-buttons {
       &:hover {
         background-color: $primary;
       }
+
+    }
+    i {
+      position: relative;
+      top: 9px;
+      left: .01px;
     }
   }
+}
+.social-button-div {
+  text-align: center
 }
