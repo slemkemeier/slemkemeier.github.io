@@ -13,15 +13,15 @@ p {
 }
 
 a {
-  color: #fed136;
+  color: #3640DC;
 }
 
 a:hover {
-  color: #fec503;
+  color: #212bbe;
 }
 
 .text-primary {
-  color: #fed136 !important;
+  color: #3640DC !important;
 }
 
 h1,
@@ -70,13 +70,13 @@ section h3.section-subheading {
 }
 
 .btn-primary {
-  background-color: #fed136;
-  border-color: #fed136;
+  background-color: #3640DC;
+  border-color: #3640DC;
 }
 
 .btn-primary:active, .btn-primary:focus, .btn-primary:hover {
-  background-color: #fec810 !important;
-  border-color: #fec810 !important;
+  background-color: #232dc9 !important;
+  border-color: #232dc9 !important;
   color: white;
 }
 
@@ -85,12 +85,12 @@ section h3.section-subheading {
 }
 
 ::-moz-selection {
-  background: #fed136;
+  background: #3640DC;
   text-shadow: none;
 }
 
 ::selection {
-  background: #fed136;
+  background: #3640DC;
   text-shadow: none;
 }
 
@@ -113,17 +113,33 @@ img::-moz-selection {
   text-transform: uppercase;
   color: white;
   border: 0;
-  background-color: #fed136;
+  background-color: #3640DC;
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
+#mainNav img {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 53px;
+  width: auto;
+  transition: transform .2s;
+  border-bottom: 1px solid black;
+}
+
+#mainNav img:hover {
+  transform: scale(3);
+  transform-origin: left top;
+  border-bottom: 0;
+}
+
 #mainNav .navbar-brand {
-  color: #fed136;
+  color: #3640DC;
   font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial, cursive;
 }
 
 #mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-  color: #fec503;
+  color: #212bbe;
 }
 
 #mainNav .navbar-nav .nav-item .nav-link {
@@ -136,7 +152,7 @@ img::-moz-selection {
 }
 
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
-  color: #fed136;
+  color: #3640DC;
 }
 
 @media (min-width: 992px) {
@@ -250,7 +266,7 @@ header.masthead .intro-text .intro-heading {
   -moz-transition: all ease 0.5s;
   transition: all ease 0.5s;
   opacity: 0;
-  background: rgba(254, 209, 54, 0.9);
+  background: rgba(54, 64, 220, 0.9);
 }
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
@@ -454,7 +470,7 @@ header.masthead .intro-text .intro-heading {
   color: white;
   border: 7px solid #e9ecef;
   border-radius: 100%;
-  background-color: #fed136;
+  background-color: #3640DC;
 }
 
 .timeline > li .timeline-image h4 {
@@ -575,6 +591,90 @@ header.masthead .intro-text .intro-heading {
   }
 }
 
+.team-modal {
+  padding-right: 0px !important;
+}
+
+.team-modal .modal-dialog {
+  margin: 1rem;
+  max-width: 100vw;
+}
+
+.team-modal .modal-content {
+  padding: 100px 0;
+  text-align: center;
+}
+
+.team-modal .modal-content h2 {
+  font-size: 3em;
+  margin-bottom: 15px;
+}
+
+.team-modal .modal-content p {
+  margin-bottom: 30px;
+}
+
+.team-modal .modal-content p.item-intro {
+  font-size: 16px;
+  font-style: italic;
+  margin: 20px 0 30px;
+  font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.team-modal .modal-content ul.list-inline {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.team-modal .modal-content img {
+  height: 350px;
+  width: auto;
+  margin-bottom: 30px;
+}
+
+.team-modal .modal-content button {
+  cursor: pointer;
+}
+
+.team-modal .close-modal {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  width: 75px;
+  height: 75px;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.team-modal .close-modal:hover {
+  opacity: 0.3;
+}
+
+.team-modal .close-modal .lr {
+  /* Safari and Chrome */
+  z-index: 1051;
+  width: 1px;
+  height: 75px;
+  margin-left: 35px;
+  /* IE 9 */
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  background-color: #212529;
+}
+
+.team-modal .close-modal .lr .rl {
+  /* Safari and Chrome */
+  z-index: 1052;
+  width: 1px;
+  height: 75px;
+  /* IE 9 */
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  background-color: #212529;
+}
+
 .team-member {
   margin-bottom: 50px;
   text-align: center;
@@ -612,7 +712,7 @@ header.masthead .intro-text .intro-heading {
   -moz-transition: all ease 0.5s;
   transition: all ease 0.5s;
   opacity: 0;
-  background: rgba(254, 209, 54, 0.9);
+  background: rgba(54, 64, 220, 0.9);
 }
 
 .team-member .team-link .team-hover:hover {
@@ -640,14 +740,13 @@ header.masthead .intro-text .intro-heading {
 }
 
 section#contact {
-  background-color: #212529;
-  background-image: url("../img/map-image.png");
+  /*  background-color: $gray-900;
+  background-image: url('../img/map-image.png');
   background-repeat: no-repeat;
   background-position: center;
-}
-
-section#contact .section-heading {
-  color: #fff;
+  .section-heading {
+    color: $white;
+  }*/
 }
 
 section#contact .form-group {
@@ -668,7 +767,7 @@ section#contact .form-group textarea.form-control {
 }
 
 section#contact .form-control:focus {
-  border-color: #fed136;
+  border-color: #3640DC;
   box-shadow: none;
 }
 
@@ -698,6 +797,29 @@ section#contact :-ms-input-placeholder {
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
+ul.social-buttons {
+  margin-bottom: 0;
+}
+
+ul.social-buttons li a {
+  font-size: 20px;
+  line-height: 40px;
+  display: block;
+  width: 70px;
+  height: 70px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  color: white;
+  border-radius: 100%;
+  outline: none;
+  background-color: #212529;
+}
+
+ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
+  background-color: #3640DC;
+}
+
 footer {
   padding: 25px 0;
   text-align: center;
@@ -716,27 +838,4 @@ footer ul.quicklinks {
   margin-bottom: 0;
   text-transform: none;
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
-
-ul.social-buttons {
-  margin-bottom: 0;
-}
-
-ul.social-buttons li a {
-  font-size: 20px;
-  line-height: 40px;
-  display: block;
-  width: 40px;
-  height: 40px;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  transition: all 0.3s;
-  color: white;
-  border-radius: 100%;
-  outline: none;
-  background-color: #212529;
-}
-
-ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
-  background-color: #fed136;
 }

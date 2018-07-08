@@ -1,4 +1,6 @@
 // Styling for the navbar
+
+
 #mainNav {
   background-color: $gray-900;
   .navbar-toggler {
@@ -10,6 +12,20 @@
     border: 0;
     background-color: $primary;
     @include heading-font;
+  }
+  img {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 53px;
+    width: auto;
+    transition: transform .2s;
+    border-bottom: 1px solid black;
+  }
+  img:hover {
+    transform: scale(3);
+    transform-origin: left top;
+    border-bottom: 0;
   }
   .navbar-brand {
     color: $primary;
