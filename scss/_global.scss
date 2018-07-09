@@ -5,6 +5,8 @@ $theme-colors: (
 );
 
 body {
+  margin: 0;
+  padding: 0;
   overflow-x: hidden;
   @include body-font;
 }
