@@ -2,6 +2,11 @@
 
 
 section#contact {
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
   background-color: lighten($primary, 60%);
   .form-group {
     margin-bottom: 25px;
