@@ -1,6 +1,6 @@
 // Global styling for this template
 $theme-colors: (
-  "primary": #0074d9,
+  "primary": #01579b,
   "danger": #ff4136
 );
 
@@ -85,14 +85,19 @@ section {
   }
 }
 
+.center-row {
+  display: block !important; 
+  text-align: center;
+}
+
 // Highlight color customization
 ::-moz-selection {
-  background: $primary;
+  background: lighten($primary, 40%);
   text-shadow: none;
 }
 
 ::selection {
-  background: $primary;
+  background: lighten($primary, 40%);
   text-shadow: none;
 }
 
@@ -103,3 +108,4 @@ img::selection {
 img::-moz-selection {
   background: transparent;
 }
+
