@@ -10,7 +10,8 @@
     font-size:40px;
 }
 .shop-online:hover{
-    background-color: lighten($primary, 40%);
+    background-color: lighten($primary, 60%);
+    color: $primary;
 }
 .note {
     border: 0.25rem solid; 

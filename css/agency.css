@@ -81,12 +81,12 @@ section h3.section-subheading {
 }
 
 ::-moz-selection {
-  background: #6abdfe;
+  background: #e3f2fd;
   text-shadow: none;
 }
 
 ::selection {
-  background: #6abdfe;
+  background: #e3f2fd;
   text-shadow: none;
 }
 
@@ -99,7 +99,7 @@ img::-moz-selection {
 }
 
 .navbar {
-  background-color: #cfeaff;
+  background-color: #e3f2fd;
   padding-left: 40px;
   padding-right: 40px;
 }
@@ -761,7 +761,8 @@ footer ul.quicklinks {
 }
 
 .shop-online:hover {
-  background-color: #6abdfe;
+  background-color: #cfeaff;
+  color: #01579B;
 }
 
 .note {
@@ -796,7 +797,8 @@ footer ul.quicklinks {
 }
 
 .donate-button:hover {
-  background-color: #6abdfe;
+  background-color: #cfeaff;
+  color: #01579B;
   text-decoration: none;
 }
 

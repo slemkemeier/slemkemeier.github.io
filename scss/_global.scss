@@ -1,7 +1,8 @@
 // Global styling for this template
 $theme-colors: (
   "primary": #01579b,
-  "danger": #ff4136
+  "danger": #ff4136,
+  "secondary": #e3f2fd
 );
 
 body {
@@ -92,12 +93,12 @@ section {
 
 // Highlight color customization
 ::-moz-selection {
-  background: lighten($primary, 40%);
+  background: $secondary;
   text-shadow: none;
 }
 
 ::selection {
-  background: lighten($primary, 40%);
+  background: $secondary;
   text-shadow: none;
 }
 

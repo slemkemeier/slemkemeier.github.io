@@ -19,6 +19,7 @@
     font-size:40px;
 }
 .donate-button:hover{
-    background-color: lighten($primary, 40%);
+    background-color: lighten($primary, 60%);
+    color: $primary;
     text-decoration: none;
 }
