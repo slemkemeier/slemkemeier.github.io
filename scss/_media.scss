@@ -1,0 +1,11 @@
+section#media {
+    background-color: lighten($primary, 60%);
+    .list-group-item {
+        background-color: lighten($primary, 60%);
+        border: none;
+    }
+    .list-group-item:hover {
+        background-color: $primary;
+        color: white;
+    }
+}

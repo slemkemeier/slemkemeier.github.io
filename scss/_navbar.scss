@@ -2,6 +2,8 @@
 
 .navbar {
   background-color: lighten($primary, 60%);
+  padding-left: 40px;
+  padding-right: 40px;
 }
 #mainNav {
   background-color: lighten($primary, 60%);
@@ -15,20 +17,10 @@
     background-color: $primary;
     @include heading-font;
   }
-  /*img {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    height: 53px;
-    width: auto;
-    transition: transform .2s;
-    border-bottom: 1px solid black;
+  .navbar-img {
+    height: 104px;
+    width: 195px;
   }
-  img:hover {
-    transform: scale(3);
-    transform-origin: left top;
-    border-bottom: 0;
-  }*/
   .navbar-brand {
     color: $primary;
     @include script-font;
@@ -40,6 +32,7 @@
     }
   }
   .navbar-nav {
+    flex-wrap: wrap;
     .nav-item {
       .nav-link {
         font-size: 90%;
